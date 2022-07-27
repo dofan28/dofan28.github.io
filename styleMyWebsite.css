@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-image: url(img/country-quilt-dark.png);
+	background-size: contain;
+	
+}
+
+.top-bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(0, 0, 0);
+	z-index: 9999;
+	border-bottom: 2px solid rgb(201, 79, 8);
+}
+.container{
+    width:960px;
+    margin: 80px auto;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: rgb(0, 0, 0);
+	color: whitesmoke;
+	position: relative;
+}
+.twitter{
+	background-image: url(img/twitterRibbon.png);
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: -24px;
+	right:-30px;
+
+}
+.header{
+    padding: 20px;
+}
+.header .judul{
+	color: rgb(201, 79, 8);
+    font-size: 50px;
+    font-weight: bolder;
+	margin-bottom: 21px;
+	text-shadow: 1px 1px 3px whitesmoke;
+}
+ul li{
+    display:inline-block;
+	margin-left: 10px;
+}
+ul li a{
+	color: whitesmoke;
+	text-decoration: none;
+	border: 2px solid rgb(201, 79, 8);
+	border-radius: 20px;
+	padding: 2px 7px;
+
+}
+ul li a:hover{
+	color: whitesmoke;
+	text-decoration: none;
+	border: 2px solid rgb(201, 79, 8);
+	border-radius: 20px;
+	padding: 2px 7px;
+	background-color: rgb(201, 79, 8);
+	box-shadow: 1px 1px 5px whitesmoke;
+}
+ul li a:active{
+	color: whitesmoke;
+	text-decoration: none;
+	border: 2px solid rgb(201, 79, 8);
+	border-radius: 20px;
+	padding: 2px 7px;
+	background-color: rgb(201, 79, 8);
+	font-weight: bold;
+}
+.img{
+	background-image: url(img/fadhil-muhammad-vXWJRzbbkNQ-unsplash.jpg);
+	background-position: center;
+	background-repeat: repeat-x;
+	height: 400px;	
+	border-top: 2px solid rgb(201, 79, 8);
+	border-bottom: 2px solid rgb(201, 79, 8);
+}
+.main{
+	padding: 20px;
+}
+.main .narasi{
+	width: 600px;
+	float: left;
+}
+.main p{
+	padding-bottom: 20px;
+}
+.main .judul h1{
+	font-size: 30px;
+}
+
+.main .judul p a{
+	color: rgb(201, 79, 8);
+	text-decoration: none;
+}
+.main .judul p a:hover{
+	color: rgb(201, 79, 8);
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+.main .penulis{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+.main .penulis img{
+	float: left;
+	padding-right: 10px;
+}
+.main .penulis p{
+	font-size: 12px;
+}
+.main .penulis h3{
+	font-size: 20px;
+	font-weight: bold;
+	padding:10px;
+}
+.footer{
+	background-color: rgb(0, 0, 0);
+	height: 40px;
+	border-top: 2px solid rgb(201, 79, 8);
+}
+.footer p{
+	color: whitesmoke;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 11px;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
